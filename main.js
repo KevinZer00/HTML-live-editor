@@ -6,9 +6,11 @@ document.addEventListener('DOMContentLoaded', function () {
 
     // initialize CodeMirror on the textarea
     var editor = CodeMirror.fromTextArea(document.getElementById('code'), {
-        lineNumbers: true,
-        mode: "htmlmixed"
+        lineNumbers: true, // show line numbers in editor
+        mode: "html", // allow HTML code input
     });
+
+    editor.getWrapperElement().style.height = '400px'; // manually set height of the code editor
 
     // function to update the preview based on current conversion mode
     function updatePreview() {

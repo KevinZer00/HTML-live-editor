@@ -11,12 +11,21 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.2/mode/htmlmixed/htmlmixed.min.js"></script>
 </head>
 <body>
+    <h2>HTML Editor</h2>
     <div id="container">
-        <textarea id="code"></textarea>
-        <div id="preview"></div>
+        <div id="editor-container">
+            <h3>HTML:</h3>
+            <textarea id="code"></textarea>
+        </div>
+        <div id="preview-container">
+            <h3>Preview:</h3>
+            <div id="preview"></div>
+        </div>
     </div>
-    <button id="jsonButton">Show JSON</button>
-    <button id="xmlButton">Show XML</button>
+    <div class="button-container">
+        <button id="jsonButton">Show JSON</button>
+        <button id="xmlButton">Show XML</button>
+    </div>
 
 
     <script src="main.js"></script>
