@@ -1,0 +1,17 @@
+#container {
+
+    justify-content: space-between;
+    width: 100%;
+}
+
+#code, #preview {
+    width: 300px;
+    margin: 10px;
+    height: 400px; 
+}
+
+#preview {
+    white-space: pre-wrap;
+    border: 1px solid black;
+    overflow: auto;
+}
